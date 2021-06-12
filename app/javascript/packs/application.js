@@ -15,3 +15,8 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+// import React from "react"
+// import ReactDOM from "react-dom"
+
+// ReactDOM.render(<App />, document.getElementById("actual-time"))
