@@ -15,7 +15,8 @@ class PagesController < ApplicationController
     time_api_parsed = JSON.parse(time_api_serialized)
     
     # Get the relevant date time
-    @tokyo_time =  DateTime.parse(time_api_parsed["datetime"]).strftime('%e/%m/%Y, %l:%M:%S %p')
+    @tokyo_time =  DateTime.parse(time_api_parsed["datetime"])
+    # @tokyo_time =  DateTime.parse(time_api_parsed["datetime"]).strftime('%e/%m/%Y, %l:%M:%S %p')
 
   end
 
