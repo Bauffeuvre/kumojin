@@ -23,11 +23,13 @@ class TokyoTime extends React.Component {
 
   tick() {
     this.setState((state) => {
+      console.log(state.time);
       let updated_tokyo_time = new Date(state.time);
-      console.log(updated_tokyo_time);
+
+      console.log(typeof updated_tokyo_time);
       console.log(updated_tokyo_time.getSeconds());
       updated_tokyo_time = updated_tokyo_time.setSeconds(updated_tokyo_time.getSeconds() + 1)
-      console.log(updated_tokyo_time)
+      console.log(new Date(updated_tokyo_time))
       return { time: updated_tokyo_time};
     });
   }

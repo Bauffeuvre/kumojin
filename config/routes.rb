@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+  root 'pages#get_tokyo_time'
 end
