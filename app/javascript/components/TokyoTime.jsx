@@ -1,10 +1,10 @@
 import React from "react"
 
-class ActualTime extends React.Component {
+class TokyoTime extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      time: new Date().toLocaleString()
+      time: this.props.tokyo_time
     };
   }
   componentDidMount() {
@@ -18,16 +18,16 @@ class ActualTime extends React.Component {
   }
   tick() {
     this.setState({
-      time: new Date().toLocaleString()
+      time: tokyo_time
     });
   }
   render() {
     return (
-      <p className="App-actual-time">
+      <p className="App-clock">
         The actual time is : {this.state.time}.
       </p>
     );
   }
 }
 
-export default ActualTime;
+export default TokyoTime;

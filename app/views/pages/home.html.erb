@@ -1,5 +1,9 @@
 <h1 id="test">Timestamps</h1>
 
-<p>In Tokyo, Japan, it is: <%= @tokyo_time %></p>
+<p>In Tokyo, Japan, it is:</p>
+ <p><%= @tokyo_time %></p>
+
+<p><%=  @tokyo_time.class  %></p>
 
 <%= react_component("ActualTime") %>
+<%= react_component("TokyoTime", tokyo_time: @tokyo_time) %>
