@@ -8,7 +8,6 @@ class TokyoTime extends React.Component {
     this.state = {
       time: this.props.tokyo_time
     };
-    console.log(this.props.tokyo_time);
   }
 
   componentDidMount() {
