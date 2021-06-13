@@ -1,4 +1,5 @@
-import React from "react"
+import React from 'react'
+import moment from 'moment'
 
 class ActualTime extends React.Component {
   constructor(props) {
@@ -24,9 +25,17 @@ class ActualTime extends React.Component {
   render() {
     return (
       <div className="Time-container-actual">
-        <h2 className="Label">Local time:</h2>
+        <h2 className="Label">
+          Local time:
+        </h2>
+        <p className="Actual-day">
+          {moment(this.state.time).format('dddd')}
+        </p>
         <p className="Actual-time">
-          {this.state.time}
+          {moment(this.state.time).format('LTS')}
+        </p>
+        <p className="Actual-date">
+          {moment(this.state.time).format("MMM Do YY")}
         </p>
       </div>
     );

@@ -1,4 +1,5 @@
-import React from "react"
+import React from 'react'
+import moment from 'moment'
 
 class TokyoTime extends React.Component {
   
@@ -31,11 +32,20 @@ class TokyoTime extends React.Component {
   render() {
     return (
       <div className="Time-container-tokyo">
-        <h2 className="Label">Tokyo, Japan:</h2>
+        <h2 className="Label">
+          Tokyo, Japan:
+        </h2>
+        <p className="Tokyo-day">
+          {moment(this.state.time).format('dddd')}
+        </p>
         <p className="Tokyo-time">
-         {this.state.time.toLocaleString('en-US', { timeZone: 'JST' })}
+          {moment(this.state.time).format('LTS')}
+        </p>
+        <p className="Tokyo-date">
+          {moment(this.state.time).format("MMM Do YY")}
         </p>
       </div>
+      
     );
   }
 }

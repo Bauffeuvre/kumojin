@@ -15,7 +15,7 @@ body {
   padding: 20px;
   margin: 20px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  background-image: url("https://source.unsplash.com/600x1200/?japan,tokyo,dark") ;
+  background-image: url("https://source.unsplash.com/600x1200/?japan,tokyo,night") ;
 }
 .Time-container-actual {
   height: 80vh;
@@ -23,7 +23,7 @@ body {
   padding: 20px;
   margin: 20px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  background-image: url("https://source.unsplash.com/600x1200/?city, dark") ;
+  background-image: url("https://source.unsplash.com/600x1200/?city,night") ;
 }
 
 .Label {
@@ -34,6 +34,14 @@ body {
   font-weight: 400;
 }
 
+.Day {
+  margin: 0 auto;
+  font-family: 'Montserrat', monospace;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  font-weight: 400;
+}
 
 .Actual-time {
   font-family: 'Montserrat', monospace;
