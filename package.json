@@ -20,7 +20,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --env=jsdom"
   },
   "jest": {
     "roots": [
