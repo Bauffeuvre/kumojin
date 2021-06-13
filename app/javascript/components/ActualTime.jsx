@@ -28,13 +28,13 @@ class ActualTime extends React.Component {
         <h2 className="Label">
           Local time:
         </h2>
-        <p className="Actual-day">
-          {moment(this.state.time).format('dddd')}
+        <p className="Day">
+          {moment(this.state.time).format('dddd').toUpperCase()}
         </p>
-        <p className="Actual-time">
+        <p className="Time">
           {moment(this.state.time).format('LTS')}
         </p>
-        <p className="Actual-date">
+        <p className="Date">
           {moment(this.state.time).format("MMM Do YY")}
         </p>
       </div>

@@ -35,13 +35,13 @@ class TokyoTime extends React.Component {
         <h2 className="Label">
           Tokyo, Japan:
         </h2>
-        <p className="Tokyo-day">
-          {moment(this.state.time).format('dddd')}
+        <p className="Day">
+          {moment(this.state.time).format('dddd').toUpperCase()}
         </p>
-        <p className="Tokyo-time">
+        <p className="Time">
           {moment(this.state.time).format('LTS')}
         </p>
-        <p className="Tokyo-date">
+        <p className="Date">
           {moment(this.state.time).format("MMM Do YY")}
         </p>
       </div>
