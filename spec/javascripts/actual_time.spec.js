@@ -26,16 +26,6 @@ it("renders the actual date", () => {
   const expected = /The actual time is : (0?[1-9]|1[0-2])\/(0?[1-9]|1[0-9]|2[0-9]|3(0|1))\/\d{4}, ((1[0-2]|0?[1-9]):([0-5][0-9]):([0-5][0-9])) ?([AP][M])./;
 
   expect(container.textContent).toMatch(expected);
-
-  // act(() => {
-  //   render(<ActualTime name="" />, container);
-  // });
-  // expect(container.textContent).toBe("Hello, Jenny!");
-
-  // act(() => {
-  //   render(<Hello name="Margaret" />, container);
-  // });
-  // expect(container.textContent).toBe("Hello, Margaret!");
 }
 
 it("renders the actual date in tokyo", () => {
