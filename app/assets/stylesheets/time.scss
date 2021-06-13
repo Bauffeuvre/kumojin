@@ -16,7 +16,8 @@ body {
 }
 
 .Time-container-tokyo {
-  height: 40%;
+  height: 50% ;
+  width:max-content;
   border: 1px solid;
   padding: 20px;
   margin: 20px;
@@ -27,7 +28,8 @@ body {
 }
 
 .Time-container-actual {
-  height: 40%;
+  height: 50%;
+  width:max-content;
   border: 1px solid;
   padding: 20px;
   margin: 20px;
@@ -72,7 +74,7 @@ body {
 
 // Media query for Xs screens (mobile)
 
-@media(max-width: 576px) {
+@media(max-width: 768px) {
   .container {
     flex-direction: column
   }

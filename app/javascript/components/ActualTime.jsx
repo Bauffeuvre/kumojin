@@ -5,7 +5,7 @@ class ActualTime extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      time: new Date().toLocaleString()
+      time: new Date()
     };
   }
   componentDidMount() {
@@ -19,7 +19,7 @@ class ActualTime extends React.Component {
   }
   tick() {
     this.setState({
-      time: new Date().toLocaleString()
+      time: new Date()
     });
   }
   render() {

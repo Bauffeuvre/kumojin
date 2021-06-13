@@ -8,6 +8,7 @@ class TokyoTime extends React.Component {
     this.state = {
       time: this.props.tokyo_time
     };
+    console.log(this.props.tokyo_time);
   }
 
   componentDidMount() {
@@ -45,7 +46,6 @@ class TokyoTime extends React.Component {
           {moment(this.state.time).format("MMM Do YY")}
         </p>
       </div>
-      
     );
   }
 }
