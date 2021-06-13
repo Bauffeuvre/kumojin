@@ -23,9 +23,12 @@ class ActualTime extends React.Component {
   }
   render() {
     return (
-      <p className="App-actual-time">
-        The actual time is : {this.state.time}.
-      </p>
+      <div className="Time-container-actual">
+        <h2 className="Label">Local time:</h2>
+        <p className="Actual-time">
+          {this.state.time}
+        </p>
+      </div>
     );
   }
 }

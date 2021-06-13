@@ -1,0 +1,52 @@
+body {
+  background-color: #80d4ea;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin: 20vh auto;
+}
+
+.Time-container-tokyo {
+  height: 80vh;
+  border: 1px solid;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background-image: url("https://source.unsplash.com/600x1200/?japan,tokyo,dark") ;
+}
+.Time-container-actual {
+  height: 80vh;
+  border: 1px solid;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background-image: url("https://source.unsplash.com/600x1200/?city, dark") ;
+}
+
+.Label {
+  font-family: 'Montserrat', monospace;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+
+.Actual-time {
+  font-family: 'Montserrat', monospace;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.Tokyo-time {
+  font-family: 'Montserrat', monospace;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}

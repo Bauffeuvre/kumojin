@@ -30,9 +30,12 @@ class TokyoTime extends React.Component {
 
   render() {
     return (
-      <p className="App-tokyo-time">
-        In tokyo, it is : {this.state.time.toLocaleString('en-US', { timeZone: 'JST' })}.
-      </p>
+      <div className="Time-container-tokyo">
+        <h2 className="Label">Tokyo, Japan:</h2>
+        <p className="Tokyo-time">
+         {this.state.time.toLocaleString('en-US', { timeZone: 'JST' })}
+        </p>
+      </div>
     );
   }
 }
