@@ -5,6 +5,9 @@ Voici le projet demandé pour le test technique. Il a été réalisé avec Ruby 
 
 
 **Version live**
+
+Déployé sous Heroku avec un free tier: le serveur se met en hibernation quand il ne recoit pas de nouvelle requête dans les trente minutes et met 30sec à repartir. Il est possible que vous ayez à attendre 30 secondes pour l'affichage.
+
 [https://kumojin.herokuapp.com/](https://kumojin.herokuapp.com/)
 
 **Problèmes rencontrés**
@@ -12,6 +15,7 @@ Voici le projet demandé pour le test technique. Il a été réalisé avec Ruby 
 * Aucune connaissance de React avant cette fin de semaine, j'ai du suivre des cours;
 * Idem pour les test sous Jest, première utilisation !
 * Les dates sous environnement JS sont un cauchemar, il y a d'ailleurs un warning dans la console suite au formattage spécifique du backend envoyé au frontend;
+* Il peut y avoir un décalage de temps entre les secondes actuelles (via JS) et celles du backend à cause de la requête http qui peut être plus longue
 
 **Remarques**
 
