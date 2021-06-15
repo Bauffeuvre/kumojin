@@ -5,6 +5,10 @@ Voici le projet demandé pour le test technique. Il a été réalisé avec Ruby 
 
 __V2__
 
+Pour lancer le projet entrer dans le terminal:
+
+``heroku local -f Procfile.dev``
+
 J'ai refait l'app avec le minimum d'addons : plus de db, pas de views. Le backend envoie l'info au FE sous JSON et est parsed dans le component React
 
 **Version live**
